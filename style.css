@@ -1,0 +1,367 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left h2 {
+    font-size: 24px;
+}
+
+.nav-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-right a:hover, .nav-right a.active {
+    text-decoration: underline;
+    border-bottom: 2px solid white;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+    margin-top: 80px;
+}
+
+.left-section h1 {
+    color: blue;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.left-section h1 span {
+    color: black;
+}
+
+.animated-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: blue;
+}
+
+/* Right Section (Image) */
+.blue-circle {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.off-white-circle {
+    width: 375px;
+    height: 375px;
+    background-color: #7d7a7af3;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.profile-photo {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%; /* Makes the photo circular */
+    border: 2px solid #ffffff;
+    object-fit: cover;          /* Ensures the image covers the circle without stretching */
+    position: relative;         /* Allows for fine positioning */
+    top: 6px;                 /* Moves the image upwards (you can adjust this) */
+    left: 7px;                  /* Moves the image to the right (adjust as needed) */
+}
+
+/* Tools Section */
+.tools-section {
+    margin-top: 100px;
+}
+
+.divider {
+    height: 2px;
+    background-color: black;
+    margin: 0 0;
+    width: 100%;
+}
+
+.shape {
+    background-color: rgb(9, 2, 36);
+    height: 150px; /* Your updated height */
+    width: 1000px; /* Your updated width */
+    margin: -75px auto 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px; /* Curved edges */
+}
+
+.tool {
+    display: flex;
+    align-items: center; /* Aligns icon and number in a row */
+    margin: 0 20px; /* Adds spacing between each tool */
+}
+
+.tool img {
+    width: 80px;
+    height: 80px;
+}
+
+.tool p {
+    margin-left: 30px; /* Space between icon and number */
+    font-size: 45px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: blue;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.skill-card {
+    background-color: #f0f0f0; /* Off-white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow for visibility */
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05); /* Hover effect to enlarge card slightly */
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.skill-info h3 {
+    font-size: 24px;
+    color: rgb(36, 5, 159);
+    margin-bottom: 10px;
+}
+
+.skill-info p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Resume Section */
+.resume-section {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.resume-section h2 {
+    color: blue;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.resume-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.resume-block {
+    margin-bottom: 30px;
+}
+
+.resume-block h3 {
+    font-size: 24px;
+    color: rgb(36, 5, 159);
+    margin-bottom: 10px;
+}
+
+.resume-block ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resume-block ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resume-download {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.resume-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: darkblue;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.projects-section h2 {
+    color: blue;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.project-card {
+    background-color: #f0f0f0; /* Off-white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover; /* Ensures images are cropped uniformly */
+}
+
+.project-info {
+    padding: 20px 0;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Hover effect to enlarge the card */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: white;
+    text-align: center;
+    min-height: 400px;
+}
+
+.contact-section h2 {
+    color: blue;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Off-white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: darkblue;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: darkblue;
+}
